@@ -1,7 +1,7 @@
 # Fake-Interior-Shader-for-GodotEngine
 Fake interior shader for the Godot Engine 3.x, using the GLES3 rendrer.
 
-## See it in action
+## See it in action (Youtube)
 [![See it in action](https://img.youtube.com/vi/PfjDlYCuU1I/0.jpg)](https://youtu.be/PfjDlYCuU1I)
 
 ## Screenshots
