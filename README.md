@@ -18,3 +18,7 @@ For your question contact me on twitter but please note that I don't use social 
 ![Screenshot 1](https://github.com/OBKF/Fake-Interior-Shader-for-GodotEngine/blob/master/screenshots/fig_1.png)
 ![Screenshot 2](https://github.com/OBKF/Fake-Interior-Shader-for-GodotEngine/blob/master/screenshots/fig_2.png)
 ![Screenshot 3](https://github.com/OBKF/Fake-Interior-Shader-for-GodotEngine/blob/master/screenshots/fig_3.png)
+
+## Credit
+This is based on the code provided by this forum thred.
+https://forum.unity.com/threads/interior-mapping.424676/
