@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path.s3tc="res://.import/Tileable marble floor tile texture (43).jpg-1e4c3ed768579366fe75947a6e9bfd3d.s3tc.stex"
 path.etc2="res://.import/Tileable marble floor tile texture (43).jpg-1e4c3ed768579366fe75947a6e9bfd3d.etc2.stex"
+metadata={
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
+}
 
 [deps]
 

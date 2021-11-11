@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/interior_2d.png-82ea73376a42126fb1cf141aefae9868.s3tc.stex"
-path.etc2="res://.import/interior_2d.png-82ea73376a42126fb1cf141aefae9868.etc2.stex"
+path.s3tc="res://.import/room_3_E.png-e107b5c70422f383887aa9847c30b3e0.s3tc.stex"
+path.etc2="res://.import/room_3_E.png-e107b5c70422f383887aa9847c30b3e0.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/textures/interior_2d.png"
-dest_files=[ "res://.import/interior_2d.png-82ea73376a42126fb1cf141aefae9868.s3tc.stex", "res://.import/interior_2d.png-82ea73376a42126fb1cf141aefae9868.etc2.stex" ]
+source_file="res://assets/textures/room_3_E.png"
+dest_files=[ "res://.import/room_3_E.png-e107b5c70422f383887aa9847c30b3e0.s3tc.stex", "res://.import/room_3_E.png-e107b5c70422f383887aa9847c30b3e0.etc2.stex" ]
 
 [params]
 
@@ -24,8 +24,8 @@ compress/normal_map=0
 flags/repeat=true
 flags/filter=true
 flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+flags/anisotropic=false
+flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false

@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path.s3tc="res://.import/window_glass_texture.png-e578db35b9d4fcd2265b6ed6c85449d3.s3tc.stex"
 path.etc2="res://.import/window_glass_texture.png-e578db35b9d4fcd2265b6ed6c85449d3.etc2.stex"
+metadata={
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
+}
 
 [deps]
 

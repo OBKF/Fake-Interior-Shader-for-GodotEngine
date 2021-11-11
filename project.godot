@@ -10,15 +10,15 @@ config_version=4
 
 _global_script_classes=[  ]
 _global_script_class_icons={
-
 }
 
 [application]
 
-config/name="Fake Interior"
-run/main_scene="res://scenes/Fake_Interior_test_1.tscn"
+config/name="Fake Interior (Interior Mapping)"
+run/main_scene="res://scenes/Fake_Interior_test_2.tscn"
 config/icon="res://icon.png"
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 environment/default_environment="res://default_env.tres"

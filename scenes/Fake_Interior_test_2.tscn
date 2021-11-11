@@ -1,0 +1,109 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://assets/textures/interior_2d.png" type="Texture" id=1]
+[ext_resource path="res://assets/textures/room_3_E.png" type="Texture" id=2]
+[ext_resource path="res://assets/building/building.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://assets/textures/room_3.png" type="Texture" id=4]
+[ext_resource path="res://assets/textures/rooms_emit.png" type="Texture" id=5]
+[ext_resource path="res://assets/textures/rooms_depth.png" type="Texture" id=6]
+[ext_resource path="res://assets/shaders/Fake_Interior_2.shader" type="Shader" id=7]
+
+[sub_resource type="PlaneMesh" id=1]
+size = Vector2( 100, 100 )
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 7 )
+shader_param/atlas_rooms = Vector2( 1, 1 )
+shader_param/rooms = Vector2( 3, 6 )
+shader_param/depth = 0.5
+shader_param/emission_threshold = 0.0
+shader_param/emission_strength = 1.0
+shader_param/room_seed = 0.0
+shader_param/emission_seed = 0.0
+shader_param/room_texture = ExtResource( 1 )
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = ExtResource( 7 )
+shader_param/atlas_rooms = Vector2( 3, 2 )
+shader_param/rooms = Vector2( 3, 6 )
+shader_param/depth = 0.5
+shader_param/emission_threshold = 0.5
+shader_param/emission_strength = 1.2
+shader_param/room_seed = 1.0
+shader_param/emission_seed = 3.0
+shader_param/room_texture = ExtResource( 6 )
+shader_param/room_emit_texture = ExtResource( 5 )
+
+[sub_resource type="ArrayMesh" id=4]
+surfaces/0 = {
+"aabb": AABB( -1.5, 0, -1.5, 3, 6.00001, 3 ),
+"array_data": PoolByteArray( 0, 0, 192, 191, 0, 0, 192, 64, 0, 0, 192, 191, 0, 127, 0, 0, 127, 0, 0, 127, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 192, 64, 0, 0, 192, 191, 0, 127, 0, 0, 127, 0, 0, 127, 0, 60, 0, 0, 0, 0, 192, 191, 0, 0, 192, 64, 0, 0, 192, 63, 0, 127, 0, 0, 127, 0, 0, 127, 0, 0, 0, 60, 0, 0, 192, 63, 0, 0, 192, 64, 0, 0, 192, 63, 0, 127, 0, 0, 127, 0, 0, 127, 0, 60, 0, 60, 0, 0, 192, 63, 0, 0, 192, 64, 0, 0, 192, 63, 0, 0, 127, 0, 127, 0, 0, 127, 0, 60, 0, 0, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 127, 0, 127, 0, 0, 127, 0, 60, 0, 60, 0, 0, 192, 191, 0, 0, 192, 64, 0, 0, 192, 63, 0, 0, 127, 0, 127, 0, 0, 127, 0, 0, 0, 0, 0, 0, 192, 191, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 127, 0, 127, 0, 0, 127, 0, 0, 0, 60, 0, 0, 192, 191, 0, 0, 192, 64, 0, 0, 192, 63, 129, 0, 0, 0, 0, 0, 127, 127, 0, 60, 0, 0, 0, 0, 192, 191, 0, 0, 0, 0, 0, 0, 192, 63, 129, 0, 0, 0, 0, 0, 127, 127, 0, 60, 0, 60, 0, 0, 192, 191, 0, 0, 192, 64, 0, 0, 192, 191, 129, 0, 0, 0, 0, 0, 127, 127, 0, 0, 0, 0, 0, 0, 192, 191, 0, 0, 0, 0, 0, 0, 192, 191, 129, 0, 0, 0, 0, 0, 127, 127, 0, 0, 0, 60, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 192, 191, 0, 129, 0, 0, 127, 0, 0, 127, 0, 60, 0, 60, 0, 0, 192, 191, 0, 0, 0, 0, 0, 0, 192, 191, 0, 129, 0, 0, 127, 0, 0, 127, 0, 0, 0, 60, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 192, 63, 0, 129, 0, 0, 127, 0, 0, 127, 0, 60, 0, 0, 0, 0, 192, 191, 0, 0, 0, 0, 0, 0, 192, 63, 0, 129, 0, 0, 127, 0, 0, 127, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 192, 64, 0, 0, 192, 191, 127, 0, 0, 0, 0, 0, 129, 127, 0, 60, 0, 0, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 192, 191, 127, 0, 0, 0, 0, 0, 129, 127, 0, 60, 0, 60, 0, 0, 192, 63, 0, 0, 192, 64, 0, 0, 192, 63, 127, 0, 0, 0, 0, 0, 129, 127, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 192, 63, 127, 0, 0, 0, 0, 0, 129, 127, 0, 0, 0, 60, 0, 0, 192, 191, 0, 0, 192, 64, 0, 0, 192, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 60, 0, 0, 0, 0, 192, 191, 0, 0, 0, 0, 0, 0, 192, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 60, 0, 60, 0, 0, 192, 63, 0, 0, 192, 64, 0, 0, 192, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 192, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 0, 0, 60 ),
+"array_index_data": PoolByteArray( 0, 0, 1, 0, 2, 0, 2, 0, 1, 0, 3, 0, 4, 0, 5, 0, 6, 0, 6, 0, 5, 0, 7, 0, 8, 0, 9, 0, 10, 0, 10, 0, 9, 0, 11, 0, 12, 0, 13, 0, 14, 0, 14, 0, 13, 0, 15, 0, 16, 0, 17, 0, 18, 0, 18, 0, 17, 0, 19, 0, 20, 0, 21, 0, 22, 0, 22, 0, 21, 0, 23, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 36,
+"name": "Material",
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 7 )
+shader_param/atlas_rooms = Vector2( 1, 1 )
+shader_param/rooms = Vector2( 3, 6 )
+shader_param/depth = 0.5
+shader_param/emission_threshold = 0.5
+shader_param/emission_strength = 1.0
+shader_param/room_seed = 0.0
+shader_param/emission_seed = 0.0
+shader_param/room_texture = ExtResource( 4 )
+shader_param/room_emit_texture = ExtResource( 2 )
+
+[sub_resource type="ArrayMesh" id=6]
+surfaces/0 = {
+"aabb": AABB( -1.5, 0, -1.5, 3, 6.00001, 3 ),
+"array_data": PoolByteArray( 0, 0, 192, 191, 0, 0, 192, 64, 0, 0, 192, 191, 0, 127, 0, 0, 127, 0, 0, 127, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 192, 64, 0, 0, 192, 191, 0, 127, 0, 0, 127, 0, 0, 127, 0, 60, 0, 0, 0, 0, 192, 191, 0, 0, 192, 64, 0, 0, 192, 63, 0, 127, 0, 0, 127, 0, 0, 127, 0, 0, 0, 60, 0, 0, 192, 63, 0, 0, 192, 64, 0, 0, 192, 63, 0, 127, 0, 0, 127, 0, 0, 127, 0, 60, 0, 60, 0, 0, 192, 63, 0, 0, 192, 64, 0, 0, 192, 63, 0, 0, 127, 0, 127, 0, 0, 127, 0, 60, 0, 0, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 127, 0, 127, 0, 0, 127, 0, 60, 0, 60, 0, 0, 192, 191, 0, 0, 192, 64, 0, 0, 192, 63, 0, 0, 127, 0, 127, 0, 0, 127, 0, 0, 0, 0, 0, 0, 192, 191, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 127, 0, 127, 0, 0, 127, 0, 0, 0, 60, 0, 0, 192, 191, 0, 0, 192, 64, 0, 0, 192, 63, 129, 0, 0, 0, 0, 0, 127, 127, 0, 60, 0, 0, 0, 0, 192, 191, 0, 0, 0, 0, 0, 0, 192, 63, 129, 0, 0, 0, 0, 0, 127, 127, 0, 60, 0, 60, 0, 0, 192, 191, 0, 0, 192, 64, 0, 0, 192, 191, 129, 0, 0, 0, 0, 0, 127, 127, 0, 0, 0, 0, 0, 0, 192, 191, 0, 0, 0, 0, 0, 0, 192, 191, 129, 0, 0, 0, 0, 0, 127, 127, 0, 0, 0, 60, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 192, 191, 0, 129, 0, 0, 127, 0, 0, 127, 0, 60, 0, 60, 0, 0, 192, 191, 0, 0, 0, 0, 0, 0, 192, 191, 0, 129, 0, 0, 127, 0, 0, 127, 0, 0, 0, 60, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 192, 63, 0, 129, 0, 0, 127, 0, 0, 127, 0, 60, 0, 0, 0, 0, 192, 191, 0, 0, 0, 0, 0, 0, 192, 63, 0, 129, 0, 0, 127, 0, 0, 127, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 192, 64, 0, 0, 192, 191, 127, 0, 0, 0, 0, 0, 129, 127, 0, 60, 0, 0, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 192, 191, 127, 0, 0, 0, 0, 0, 129, 127, 0, 60, 0, 60, 0, 0, 192, 63, 0, 0, 192, 64, 0, 0, 192, 63, 127, 0, 0, 0, 0, 0, 129, 127, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 192, 63, 127, 0, 0, 0, 0, 0, 129, 127, 0, 0, 0, 60, 0, 0, 192, 191, 0, 0, 192, 64, 0, 0, 192, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 60, 0, 0, 0, 0, 192, 191, 0, 0, 0, 0, 0, 0, 192, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 60, 0, 60, 0, 0, 192, 63, 0, 0, 192, 64, 0, 0, 192, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 192, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 0, 0, 60 ),
+"array_index_data": PoolByteArray( 0, 0, 1, 0, 2, 0, 2, 0, 1, 0, 3, 0, 4, 0, 5, 0, 6, 0, 6, 0, 5, 0, 7, 0, 8, 0, 9, 0, 10, 0, 10, 0, 9, 0, 11, 0, 12, 0, 13, 0, 14, 0, 14, 0, 13, 0, 15, 0, 16, 0, 17, 0, 18, 0, 18, 0, 17, 0, 19, 0, 20, 0, 21, 0, 22, 0, 22, 0, 21, 0, 23, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 36,
+"name": "Material",
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+
+[node name="Scene Root" type="Spatial"]
+
+[node name="Floor" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Building_1" type="MeshInstance" parent="."]
+material_override = SubResource( 2 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Building_3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
+material_override = SubResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Building_2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
+material_override = SubResource( 5 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.866025, 0.25, -0.433013, 0, 0.866025, 0.5, 0.5, -0.433013, 0.75, -16, 6.04791, 8 )
+light_energy = 1.4
+shadow_enabled = true
+directional_shadow_mode = 0
+directional_shadow_normal_bias = 0.3
+directional_shadow_max_distance = 30.0
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 8 )

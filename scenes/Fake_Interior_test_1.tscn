@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/test_wall/wall.mesh" type="ArrayMesh" id=3]
 [ext_resource path="res://assets/test_wall/window.mesh" type="ArrayMesh" id=4]
 
-[node name="Scene Root" index="0" instance=ExtResource( 1 )]
+[node name="Scene Root" instance=ExtResource( 1 )]
 
 [node name="Camera" parent="." index="0"]
 transform = Transform( 0.954671, 0.0456949, -0.294135, 4.69203e-06, 0.988144, 0.153527, 0.297664, -0.146569, 0.943352, -1.81772, 1.59773, 4.53809 )
@@ -18,4 +18,3 @@ mesh = ExtResource( 3 )
 
 [node name="window" parent="." index="4"]
 mesh = ExtResource( 4 )
-
