@@ -15,7 +15,7 @@ varying vec3 tangent_view_dir;
 
 // psuedo random with float input
 vec2 f_random(float co){
-    return fract(sin((co + room_seed) * vec2(12.9898,78.233)) * 43758.5453);
+	return fract(sin((co + room_seed) * vec2(12.9898,78.233)) * 43758.5453);
 }
 
 void vertex(){
